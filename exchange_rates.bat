@@ -1,0 +1,1 @@
+sqlldr CONTROL=exchange_rates.ctl   skip=1   
