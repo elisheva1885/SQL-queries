@@ -16,16 +16,6 @@
 --GROUP BY currency_code
 
 --Task 4
---SELECT cr2.rate_date, cr2.best_for_date, cr1.currency_code , cr1.country_name
---FROM currency_rates cr1
---JOIN (
---  SELECT MIN(value) AS best_for_date , TRUNC(rate_date) AS rate_date
---  FROM currency_rates
---  GROUP BY TRUNC(rate_date)
---) cr2
---ON TRUNC(cr1.rate_date) = cr2.rate_date
---AND cr1.value = cr2.best_for_date
---
 --SELECT rate_date, value AS best_for_date, currency_code , country_name
 --FROM(
 --SELECT cr.*,  
